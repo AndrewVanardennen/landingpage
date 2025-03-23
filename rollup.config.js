@@ -1,6 +1,6 @@
 import typescript from '@rollup/plugin-typescript'
 import resolve from '@rollup/plugin-node-resolve'
-import { copyFile, cp } from 'fs/promises'
+import { copyFile, cp, mkdir } from 'fs/promises'
 
 try {
   await copyFile('src/index.html', 'www/index.html')
