@@ -4,6 +4,12 @@ import './elements/content.js'
 import './elements/footer.js'
 import './elements/header.js'
 
+declare global {
+  interface HTMLElementTagNameMap {
+    'app-shell': AppShell
+  }
+}
+
 @customElement('app-shell')
 export class AppShell extends LiteElement {
   @property({ type: String }) accessor selected = 'home'
