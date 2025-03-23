@@ -5,7 +5,7 @@ import { copyFile, cp } from 'fs/promises'
 try {
   await copyFile('src/index.html', 'www/index.html')
 } catch (error) {
-  await mkdir('wwww')
+  await mkdir('www')
   await copyFile('src/index.html', 'www/index.html')
 }
 
