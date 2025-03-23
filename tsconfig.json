@@ -2,9 +2,8 @@
     "compilerOptions": {
       "module": "NodeNext",
       "target": "ES2022",
-      "moduleResolution": "NodeNext",
-      "outDir": "exports",
-      "declaration": true
+      "moduleResolution": "nodenext",
+      "outDir": "www"
     },
     "include": ["./src/**/*"]
   }
