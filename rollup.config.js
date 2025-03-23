@@ -4,11 +4,16 @@ import { copyFile, cp } from 'fs/promises'
 
 try {
   await copyFile('src/index.html', 'www/index.html')
-} catch (error) {}
+} catch (error) {
+  await mkdir('wwww')
+  await copyFile('src/index.html', 'www/index.html')
+}
 
 try {
   await cp('node_modules/@vandeurenglenn/lite-elements/exports/themes', 'www/themes', { recursive: true })
 } catch (error) {}
+
+
 
 export default {
   input: ['./src/shell.ts'],
