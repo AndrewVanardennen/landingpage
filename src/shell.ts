@@ -21,7 +21,7 @@ export class AppShell extends LiteElement {
         load-symbols="false"></custom-theme>
       <app-header .selected=${this.selected}></app-header>
       <app-content .selected=${this.selected}></app-content>
-      <app-footer .selected=${this.selected}></app-footer>
+      <app-footer></app-footer>
     `
   }
 }

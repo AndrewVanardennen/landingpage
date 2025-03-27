@@ -21,7 +21,8 @@ export class AppContent extends LiteElement {
   renderContent() {
     switch (this.selected) {
       case 'home':
-        return html`<p>Welcome to the home page</p>`
+        return html`<p>Welcome to the home page</p>
+        <p> So this is it? </p>`
       case 'about':
         return html`<p>Learn more about us</p>`
       case 'contact':

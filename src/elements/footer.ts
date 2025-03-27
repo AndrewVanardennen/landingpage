@@ -1,5 +1,7 @@
-import { LiteElement, html, css } from '@vandeurenglenn/lite'
+import { LiteElement, html, css, customElement } from '@vandeurenglenn/lite'
 
+
+@customElement('app-footer')
 export class AppFooter extends LiteElement {
   static styles = [
     css`
@@ -14,6 +16,8 @@ export class AppFooter extends LiteElement {
   ]
 
   render() {
-    return html` <h1>My App</h1> `
+    return html`
+    
+    <p> Footer </p> `
   }
 }
